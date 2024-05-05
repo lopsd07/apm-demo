@@ -116,3 +116,18 @@ java -Xmx512m -jar ecommerce-user-service-0.0.1-SNAPSHOT.jar --spring.config.loc
 java -Xmx512m -jar ecommerce-product-service-0.0.1-SNAPSHOT.jar --spring.config.location=file:application_prod.yml > logs/prod.log 2>&1 &
 java -Xmx512m -jar cloud-simple-ui-1.0.0.jar --spring.config.location=file:ui.properties > logs/ui.log 2>&1 &
 ```
+
+### 环境变量设置
+
+- ui
+    API_SERVER
+- api
+    USER_SERVER
+    PRODUCT_SERVER
+- product
+    USER_SERVER
+    PERSISTENCE_SERVER
+- user
+    PERSISTENCE_SERVER
+- persistence
+    DB_SERVER

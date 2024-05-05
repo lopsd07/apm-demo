@@ -1,0 +1,32 @@
+server:
+  port: 8083
+
+logging:
+  level:
+    root: INFO
+    com.huawei: DEBUG
+
+users-server:
+  host: EC-user-service
+  port: 8080
+  
+products-server:
+  host: EC-products-service
+  port: 8080
+  
+payment-server:
+  host: EC-payment-service
+  port: 8080
+  
+persistence-server:
+  host: localhost
+  port: 8083
+  mapping: /persistence
+
+workload: 2000
+
+mysql:
+  host: {{DB_SERVER:localhost}}
+  port: {{DB_PORT:3306}}
+  user: apm
+  pass: paasapm

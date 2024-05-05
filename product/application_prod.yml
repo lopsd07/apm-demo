@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+logging:
+  level:
+    root: INFO
+    com.huawei: DEBUG
+
+users-server:
+  host: {{USER_SERVER:localhost}}
+  port: 8081
+  
+persistence-server:
+  host: {{PERSISTENCE_SERVER:localhost}}
+  port: 8083
+  mapping: /persistence
+
+workload: 2000
